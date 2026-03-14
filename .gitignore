@@ -1,0 +1,32 @@
+### OS-specific ###
+.DS_Store
+Thumbs.db
+
+### PHP / Composer ###
+/vendor/
+composer.lock
+
+### IDE / Editor ###
+.idea/
+.vscode/
+*.code-workspace
+
+### Logs / Debug ###
+*.log
+debugbar/
+
+### Coverage / Reports ###
+coverage/
+phpunit.xml.cache
+
+### Misc ###
+*.cache
+.env
+.env.*
+.phpunit.result.cache
+
+### Easy Coding Standard ###
+.ecs_cache
+
+### Silverstripe folder not needed ###
+public/

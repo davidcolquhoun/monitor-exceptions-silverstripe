@@ -1,0 +1,10 @@
+---
+Name: monitor-exceptions-error-reporting
+After: logging
+---
+SilverStripe\Core\Injector\Injector:
+  Psr\Log\LoggerInterface.errorhandler:
+    calls:
+      pushRemoteErrorHandler: [pushHandler, ['%$Monitor\Exceptions\Logging\RemoteErrorReportingHandler']]
+  Monitor\Exceptions\Logging\RemoteErrorReportingHandler:
+    class: Monitor\Exceptions\Logging\RemoteErrorReportingHandler
